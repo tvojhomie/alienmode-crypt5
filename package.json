@@ -1,0 +1,29 @@
+{
+  "name": "@alienmode/crypt5",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./index.mjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/api.test.mjs",
+    "start": "node server.mjs",
+    "generate": "node cli.mjs"
+  },
+  "description": "Offline AlienMode crypt5 subscription link generator and self-hosted provider API",
+  "license": "MIT",
+  "bin": {
+    "alienmode-crypt5": "./cli.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "cli.mjs",
+    "server.mjs",
+    "recipient.json",
+    "openapi.json",
+    "PROTOCOL.md",
+    "README.ru.md"
+  ]
+}

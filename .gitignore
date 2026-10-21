@@ -1,0 +1,18 @@
+.DS_Store
+node_modules/
+coverage/
+*.log
+.env
+.env.*
+api-token
+api-token.*
+request.json
+link.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.keychain-db
+
+# Local app interoperability utility; not part of the provider SDK.
+test/write-vectors.mjs
