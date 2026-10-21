@@ -25,5 +25,13 @@
     "openapi.json",
     "PROTOCOL.md",
     "README.ru.md"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvojhomie/alienmode-crypt5.git"
+  },
+  "homepage": "https://github.com/tvojhomie/alienmode-crypt5#readme",
+  "bugs": {
+    "url": "https://github.com/tvojhomie/alienmode-crypt5/issues"
+  }
 }

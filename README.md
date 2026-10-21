@@ -12,8 +12,14 @@ This is AlienMode's own format, **not Happ crypt5**.
 
 ## Quick start
 
-Clone or download this repository, then enter its directory. No `npm install` is
-needed to run the CLI or API.
+Clone the repository and enter its directory:
+
+```sh
+git clone https://github.com/tvojhomie/alienmode-crypt5.git
+cd alienmode-crypt5
+```
+
+No `npm install` is needed to run the CLI or API.
 
 Create a private `request.json` file (0600 permissions) containing:
 
@@ -32,7 +38,13 @@ subscription URLs in shell arguments, public issues, examples, or logs.
 ## Library integration
 
 Copy the module files together with `recipient.json`, or install this repository
-as a Git dependency. The package exports `encryptLink`:
+as a Git dependency:
+
+```sh
+npm install github:tvojhomie/alienmode-crypt5
+```
+
+For production, pin a reviewed commit in your lockfile. The package exports `encryptLink`:
 
 ```js
 import { encryptLink } from './index.mjs';

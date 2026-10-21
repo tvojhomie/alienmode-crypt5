@@ -4,6 +4,13 @@ Node.js 22+; сторонние зависимости и установка npm
 Генерация полностью локальная: модуль не скачивает подписку и не отправляет её Happ или AlienMode.
 Для расшифровки нужен AlienMode build 22 или новее. Формат не совместим с Happ.
 
+## Скачать
+
+```sh
+git clone https://github.com/tvojhomie/alienmode-crypt5.git
+cd alienmode-crypt5
+```
+
 ## CLI
 
 Создайте файл `request.json` с правами 0600 (реальные токены не добавляйте в Git):
@@ -21,6 +28,15 @@ node cli.mjs < request.json > link.json
 При создании HTML используйте безопасное экранирование атрибутов. Приложение должно быть установлено.
 
 ## Библиотека
+
+Можно скопировать файлы модуля вместе с `recipient.json` или установить Git-зависимость:
+
+```sh
+npm install github:tvojhomie/alienmode-crypt5
+```
+
+При установке зависимостью импортируйте из `@alienmode/crypt5` вместо `./index.mjs`.
+Для production закрепите проверенный commit в lockfile. В npm registry пакет не опубликован.
 
 ```js
 import { encryptLink } from './index.mjs';
